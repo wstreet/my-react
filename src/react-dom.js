@@ -4,7 +4,7 @@ import scheduleRoot from './scheduleRoot'
 function render(element, container) {
   // 根节点对应的fiber
   const rootFiber = {
-    type: TAG_ROOT,
+    tag: TAG_ROOT,
     // stateNode: 原生节点(host)，指向真实dom元素
     stateNode: container,
     props: {

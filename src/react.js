@@ -2,6 +2,8 @@
 import { ELEMENT_TEXT } from './constant'
 
 function createElement (type, config, ...children) {
+  delete config.__self
+  delete config.__source
   return {
     type,
     props: {
